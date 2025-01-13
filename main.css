@@ -28,15 +28,15 @@ body {
   }
   #app {
     min-width: 350px;
-    height: 350px;
-    border: 10px solid hsl(305, 98%, 74%);
-    border-radius: 50%;
+    height: 100%;
+    /* border: 10px solid hsl(305, 98%, 74%);
+    border-radius: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: hsl(0, 0%, 15%);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* /* background: hsl(0, 0%, 15%); */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     position: relative;
   }
   p {
@@ -48,22 +48,37 @@ body {
     top: 20%;
   }
   button {
-    border: none;
-    background: hsl(267, 98%, 76%);
-    color: hsl(0, 0%, 18%);
+    height:3em;
+    width: 3em;
+    border: 3px solid hsl(305, 98%, 74%);
+    border-radius: 50%;
+    background: hsl(0, 0%, 15%);
+    color: hsl(305, 98%, 74%);
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 3em;
     padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-weight: 700;
-    position: absolute;
-    top: 50%;
+    /* position: absolute; */
+    /* top: 50%; */
   }
   button:hover {
-    background: hsl(267, 98%, 82%);
+    background: hsl(0, 0%, 20%);
     transform: scale(1.1); 
     transition: all .5s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 20px;
+  }
+
+
+  #names {
+    margin: 1em 0;
+    padding: 0;
+    padding-inline-start: 0;
+  }
+
+  li {
+    list-style: none;
+    font-size: 2em;
+    font-weight: 400;
   }

@@ -14,12 +14,20 @@
   <body>
     <div id="header">
         <h1>Workflow Improvement Team Daily Standup</h1>
-        <h2>Who goes first today?</h2>
+        <h2>What's the order today?</h2>
     </div>
     <div id="app">
-      <p id="name-display">?</p> 
-      <button onclick="pickPerson()">Go</button>
+      <button onclick="printNames()">Go</button>
+
+      <div class="name-list">
+        <ul id="names">
+        </ul>
+      </div>
+
     </div>
+
+
+
     <script src="app.js"></script>
   </body>
 </html>
